@@ -1,7 +1,7 @@
 package com.mycompany.mavenproject1.business;
 
 import com.mycompany.mavenproject1.dao.CustomerDAO;
-import com.mycompany.mavenproject1.dao.algorithms.CustomerCreateDAO;
+import com.mycompany.mavenproject1.dao.algorithms.customer.CustomerCreateDAO;
 import com.mycompany.mavenproject1.dao.algorithms.customer.CustomerReadDAO;
 import com.mycompany.mavenproject1.data.Customer;
 import com.mycompany.mavenproject1.data.DAOEntity;

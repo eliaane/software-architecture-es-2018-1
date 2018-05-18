@@ -1,6 +1,7 @@
-package com.mycompany.mavenproject1.dao.algorithms;
+package com.mycompany.mavenproject1.dao.algorithms.customer;
 
 import com.mycompany.mavenproject1.dao.DBConnectSingleton;
+import com.mycompany.mavenproject1.dao.algorithms.CreateDAO;
 import com.mycompany.mavenproject1.data.Customer;
 import com.mycompany.mavenproject1.data.DAOEntity;
 import java.sql.PreparedStatement;
