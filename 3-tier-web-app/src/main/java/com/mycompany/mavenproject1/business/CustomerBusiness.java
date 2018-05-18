@@ -1,7 +1,10 @@
 package com.mycompany.mavenproject1.business;
 
 import com.mycompany.mavenproject1.dao.CustomerDAO;
+import com.mycompany.mavenproject1.dao.algorithms.CustomerCreateDAO;
+import com.mycompany.mavenproject1.dao.algorithms.customer.CustomerReadDAO;
 import com.mycompany.mavenproject1.data.Customer;
+import com.mycompany.mavenproject1.data.DAOEntity;
 import java.util.Set;
 
 public class CustomerBusiness {
@@ -38,7 +41,10 @@ public class CustomerBusiness {
     }
 
     public CustomerBusiness() {
-        dao = new CustomerDAO();
+        dao = new CustomerDAO(
+                new CustomerCreateDAO(),
+                new CustomerReadDAO()
+        );
         
     }
     
@@ -59,7 +65,7 @@ public class CustomerBusiness {
             
     }
 
-    public Set<Customer> readAll() {
+    public Set<? extends DAOEntity> readAll() {
         return dao.readAll();
 
     }

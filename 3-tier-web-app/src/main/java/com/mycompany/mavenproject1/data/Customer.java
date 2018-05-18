@@ -2,7 +2,7 @@ package com.mycompany.mavenproject1.data;
 
 import java.util.Objects;
 
-public class Customer {
+public class Customer implements DAOEntity {
     
     private int id;
     private String name;

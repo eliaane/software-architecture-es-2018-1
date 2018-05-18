@@ -2,7 +2,7 @@ package com.mycompany.mavenproject1.data;
 
 import java.util.Objects;
 
-public class Country {
+public class Country implements DAOEntity {
     
     private int id;
     private String name;
